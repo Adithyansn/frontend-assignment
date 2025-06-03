@@ -1,0 +1,212 @@
+/* Task 2: Style all images */
+img {
+  border: 2px dashed gray;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  width: 150px;
+}
+
+/* Task 3: Media query to change only font size */
+body {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Task 4: Different cursors */
+.cursor-pointer { cursor: pointer; }
+.cursor-wait { cursor: wait; }
+.cursor-crosshair { cursor: crosshair; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+/* Task 5: Box Model class for divs */
+.box-model {
+  padding: 20px;
+  margin: 15px;
+  border: 2px solid #4CAF50;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Task 6: Span hover effect */
+span.hover-effect:hover {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffcc00;
+}
+
+/* Task 7: translate() on hover */
+.move-box {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.move-box:hover {
+  transform: translate(20px, 10px);
+}
+
+/* Task 8: Tooltip using class */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Task 9 */
+.clip-image img {
+  width:320px;
+  height: 100px;
+  clip clip-path:inset:(0px 120px 50px 0px) ;
+  .border-image: 2px dashed white;
+}
+
+
+/* Task 11 */
+.box{
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+
+.half-rounded {
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+
+}
+
+/* Task 12 */
+.bg-center {
+  width: 200px;
+  height: 100px;
+  background-image: url('https://via.placeholder.com/150');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid #ccc;
+}
+
+/* Task 13 */
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.flex-reverse div {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+}
+
+/* Task 14 */
+.border-image {
+  border: 10px solid transparent;
+  padding: 20px;
+  border-image: url('https://via.placeholder.com/60x60.png?text=B') 30 stretch;
+  width: fit-content;
+}
+
+/* Task 15 */
+.rounded-bottom-left {
+  width: 150px;
+  height: 100px;
+  background-color: salmon;
+  border-bottom-left-radius: 25px;
+}
+
+
+/* Task 16: Remove opacity on hover */
+.hover-img {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.hover-img:hover {
+  opacity: 1;
+}
+
+/* Task 17: Absolute position to the right */
+.positioned-div {
+  position: absolute;
+  right: 0;
+  top: 50px; /* Optional: adjust vertically */
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Task 18: Scrollbar for the div */
+.scroll-div {
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 120px;
+}
+
+/* Task 19: Linear gradient background */
+.gradient-div {
+  height: 100px;
+  background: linear-gradient(to bottom, white, red, blue, green);
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+}
+
+/* Task 20: Rotate div */
+.rotated-div {
+  margin-top: 20px;
+  transform: rotate(45deg);
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
